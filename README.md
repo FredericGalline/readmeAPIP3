@@ -8,8 +8,11 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 
 **Utilisateurs :**
 
-- GET : Récupère la liste des utilisateurs
-- POST : Ajoute un utilisateur avec les informations fournies dans le corps de la requête (firstname, lastname, email, biography, about, user_image, password, github_page, experience, user_role_id, job_id, location_id)
+- Récupérer toutes les utilisateurs : **_GET /users_**
+- Récupérer une utilisateur par ID : **_GET /users/:id_**
+- Créer une utilisateur : **_POST /cusers_**
+- Mettre à jour une utilisateur : **_PUT /users/:id_**
+- Supprimer une utilisateur : **_DELETE /users/:id_**
 
 **Candidatures :**
 
@@ -59,7 +62,6 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Mettre à jour une régions : **_PUT /locations/:id_**
 - Supprimer une région : **_DELETE /locations/:id_**
 
-
 **Emplois :**
 
 - Récupérer tous les emplois : **_GET /jobs_**
@@ -75,9 +77,6 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Créer un rôle utilisateur : **_POST /user_roles_**
 - Mettre à jour un rôle utilisateur : **_PUT /user_roles_**
 - Supprimer un rôle utilisateur :**_DELETE /user_roles_**
-
-
-
 
 ## Exemple Utilisateurs
 
