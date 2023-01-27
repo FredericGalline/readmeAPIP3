@@ -242,3 +242,14 @@ Avec un corps de requête :
 ```
 HTTP/1.1 200 OK
 ```
+
+## Gestion des erreurs
+Pour la gestion des erreurs, l'API doit retourner le maximum d'informations pour que le développeur puisse comprendre l'erreur et effectuer une correction mais également suffisament d'informations pour que le développeur puisse les utiliser dans son programme pour retourner les problèmes fonctionnels à l'utilisateur final.
+
+Par exemple dans une API Rest, il est important que les différents cas d'erreur soit explicités:
+```
+400 - BadRequest: The request is malformed.
+404 - NotFound: The resource backup can't be found
+401 - Unauthorized: The user is not authentified.
+403 - Forbidden: The user is not authorized to access to the resource backup.
+```
