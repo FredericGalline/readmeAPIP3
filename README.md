@@ -7,77 +7,57 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 ## Endpoints :
 
 **Utilisateurs :**
-Endpoint : /users
 
-- Méthode : GET
-    - Description : Récupère une liste de tous les utilisateurs
-    - Réponse : Liste des utilisateurs avec les champs id, firstname, lastname, email, biography, about, user_image, github_page, experience, user_role_id, job_id et location_id
-- Méthode : POST
-    - Description : Ajoute un nouvel utilisateur
-    - Requête : Champs firstname, lastname, email, biography, about, user_image, password, github_page, experience, user_role_id, job_id et location_id
-    - Réponse : ID de l'utilisateur ajouté
-- Méthode : PUT
-    - Description : Met à jour un utilisateur existant
-    - Requête : ID de l'utilisateur à mettre à jour et les champs à mettre à jour (firstname, lastname, email, biography, about, user_image, password, github_page, experience, user_role_id, job_id et location_id)
-    - Réponse : Message de confirmation de la mise à jour
-- Méthode : DELETE
-    - Description : Supprime un utilisateur existant
-    - Requête : ID de l'utilisateur à supprimer
-    - Réponse : Message de confirmation de la suppression
+- GET : Récupère la liste des utilisateurs
+- POST : Ajoute un utilisateur avec les informations fournies dans le corps de la requête (firstname, lastname, email, biography, about, user_image, password, github_page, experience, user_role_id, job_id, location_id)
 
 **Candidatures :**
-- Méthode : GET
-    - Description : Récupère une liste de toutes les candidatures
-    - Réponse : Liste des candidatures avec les champs user_id, project_id, apply_date, user_status et user_motivation
-- Méthode : POST
-    - Description : Ajoute une nouvelle candidature
-    - Requête : Champs user_id, project_id, apply_date, user_status et user_motivation
-    - Réponse : ID de la candidature ajoutée
-- Méthode : PUT
-    - Description : Met à jour une candidature existante
-    - Requête : ID de la candidature à mettre à jour et les champs à mettre à jour (user_id, project_id, apply_date, user_status et user_motivation)
-    - Réponse : Message de confirmation de la mise à jour
-- Méthode : DELETE
-    - Description : Supprime une candidature existante
-    - Requête : ID de la candidature à supprimer
-    - Réponse : Message de confirmation de la suppression
+
+- Récupérer toutes les candidatures : **_GET /candidacies_**
+- Récupérer une candidature par ID : **_GET /candidacies/:id_**
+- Créer une candidature : **_POST /candidacies_**
+- Mettre à jour une candidature : **_PUT /candidacies/:id_**
+- Supprimer une candidature : **_DELETE /candidacies/:id_**
 
 **Projets :**
-- Récupérer tous les projets : ***GET /projects***
-- Récupérer un projet par ID : ***GET /projects/:id***
-- Créer un projet : ***POST /projects***
-- Mettre à jour un projet : ***PUT /projects/:id***
-- Supprimer un projet : ***DELETE /projects/:id***
+
+- Récupérer tous les projets : **_GET /projects_**
+- Récupérer un projet par ID : **_GET /projects/:id_**
+- Créer un projet : **_POST /projects_**
+- Mettre à jour un projet : **_PUT /projects/:id_**
+- Supprimer un projet : **_DELETE /projects/:id_**
 
 **Compétences utilisateur :**
-- Récupérer toutes les compétences utilisateur : ***GET /user_skills***
-- Récupérer une compétence utilisateur par ID : ***GET /user_skills/:id***
-- Créer une compétence utilisateur : ***POST /user_skills***
-- Mettre à jour une compétence utilisateur : ***PUT /user_skills/:id***
-- Supprimer une compétence utilisateur : ***DELETE /user_skills/:id***
+
+- Récupérer toutes les compétences utilisateur : **_GET /user_skills_**
+- Récupérer une compétence utilisateur par ID : **_GET /user_skills/:id_**
+- Créer une compétence utilisateur : **_POST /user_skills_**
+- Mettre à jour une compétence utilisateur : **_PUT /user_skills/:id_**
+- Supprimer une compétence utilisateur : **_DELETE /user_skills/:id_**
 
 **Compétences projet :**
-- Récupérer toutes les compétences projet : ***GET /project_skills***
-- Récupérer une compétence projet par ID : ***GET /project_skills/:id***
-- Créer une compétence projet : ***POST /project_skills***
-- Mettre à jour une compétence projet : ***PUT /project_skills/:id***
-- Supprimer une compétence projet : ***DELETE /project_skills/:id***
+
+- Récupérer toutes les compétences projet : **_GET /project_skills_**
+- Récupérer une compétence projet par ID : **_GET /project_skills/:id_**
+- Créer une compétence projet : **_POST /project_skills_**
+- Mettre à jour une compétence projet : **_PUT /project_skills/:id_**
+- Supprimer une compétence projet : **_DELETE /project_skills/:id_**
 
 **Emplois :**
-- Récupérer tous les emplois : ***GET /jobs***
-- Récupérer un emploi par ID : ***GET /jobs/:id***
-- Créer un emploi : ***POST /jobs***
-- Mettre à jour un emploi : ***PUT /jobs/:id***
-- Supprimer un emploi : ***DELETE /jobs/:id***
+
+- Récupérer tous les emplois : **_GET /jobs_**
+- Récupérer un emploi par ID : **_GET /jobs/:id_**
+- Créer un emploi : **_POST /jobs_**
+- Mettre à jour un emploi : **_PUT /jobs/:id_**
+- Supprimer un emploi : **_DELETE /jobs/:id_**
 
 **Rôles utilisateur :**
-- Récupérer tous les rôles utilisateur : ***GET /user_roles***
-- Récupérer un rôle utilisateur par ID : ***GET /user_roles/:id***
-- Créer un rôle utilisateur : ***POST /user_roles***
-- Mettre à jour un rôle utilisateur : ***PUT /user_roles***
-- Supprimer un rôle utilisateur :***DELETE /user_roles***
 
-
+- Récupérer tous les rôles utilisateur : **_GET /user_roles_**
+- Récupérer un rôle utilisateur par ID : **_GET /user_roles/:id_**
+- Créer un rôle utilisateur : **_POST /user_roles_**
+- Mettre à jour un rôle utilisateur : **_PUT /user_roles_**
+- Supprimer un rôle utilisateur :**_DELETE /user_roles_**
 
 ## Exemple Utilisateurs
 
