@@ -6,7 +6,7 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 
 ## Endpoints :
 
-** Utilisateurs : **
+**Utilisateurs :**
 
 - Récupérer tous les utilisateurs : GET /users
 - Récupérer un utilisateur par ID : GET /users/:id
@@ -14,7 +14,7 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Mettre à jour un utilisateur : PUT /users/:id
 - Supprimer un utilisateur : DELETE /users/:id
 
-** Candidatures :**
+**Candidatures :**
 
 - Récupérer toutes les candidatures : GET /candidacies
 - Récupérer une candidature par ID : GET /candidacies/:id
@@ -22,7 +22,7 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Mettre à jour une candidature : PUT /candidacies/:id
 - Supprimer une candidature : DELETE /candidacies/:id
 
-** Projets :**
+**Projets :**
 
 - Récupérer tous les projets : GET /projects
 - Récupérer un projet par ID : GET /projects/:id
@@ -30,7 +30,7 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Mettre à jour un projet : PUT /projects/:id
 - Supprimer un projet : DELETE /projects/:id
 
-** Compétences utilisateur :**
+**Compétences utilisateur :**
 
 - Récupérer toutes les compétences utilisateur : GET /user_skills
 - Récupérer une compétence utilisateur par ID : GET /user_skills/:id
@@ -38,7 +38,7 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Mettre à jour une compétence utilisateur : PUT /user_skills/:id
 - Supprimer une compétence utilisateur : DELETE /user_skills/:id
 
-** Compétences projet :**
+**Compétences projet :**
 
 - Récupérer toutes les compétences projet : GET /project_skills
 - Récupérer une compétence projet par ID : GET /project_skills/:id
@@ -46,7 +46,7 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Mettre à jour une compétence projet : PUT /project_skills/:id
 - Supprimer une compétence projet : DELETE /project_skills/:id
 
-** Emplois :**
+**Emplois :**
 
 - Récupérer tous les emplois : GET /jobs
 - Récupérer un emploi par ID : GET /jobs/:id
@@ -54,7 +54,7 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Mettre à jour un emploi : PUT /jobs/:id
 - Supprimer un emploi : DELETE /jobs/:id
 
-** Rôles utilisateur :**
+**Rôles utilisateur :**
 
 - Récupérer tous les rôles utilisateur : GET /user_roles
 - Récupérer un rôle utilisateur par ID : GET /user_roles/:id
@@ -108,7 +108,6 @@ Réponse :
         }
     ]
 }
-
 ```
 
 ### Récupérer un utilisateur par son ID
@@ -137,7 +136,6 @@ Réponse :
     "job_id": 1,
     "location_id": 1
 }
-
 ```
 
 ### Ajouter un utilisateur
@@ -189,7 +187,6 @@ Body :
     "job_id": 1,
     "location_id": 5
 }
-
 ```
 
 Avec un corps de requête :
@@ -227,5 +224,4 @@ Avec un corps de requête :
 
 ```
 HTTP/1.1 200 OK
-
 ```
