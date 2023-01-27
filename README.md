@@ -10,7 +10,7 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 
 - Récupérer toutes les utilisateurs : **_GET /users_**
 - Récupérer une utilisateur par ID : **_GET /users/:id_**
-- Créer une utilisateur : **_POST /cusers_**
+- Créer une utilisateur : **_POST /users_**
 - Mettre à jour une utilisateur : **_PUT /users/:id_**
 - Supprimer une utilisateur : **_DELETE /users/:id_**
 
