@@ -43,6 +43,23 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Mettre à jour une compétence projet : **_PUT /project_skills/:id_**
 - Supprimer une compétence projet : **_DELETE /project_skills/:id_**
 
+**Compétences :**
+
+- Récupérer toutes les compétences : **_GET /skills_**
+- Récupérer une compétence par ID : **_GET /skills/:id_**
+- Créer une compétence : **_POST /skills_**
+- Mettre à jour une compétence : **_PUT /skills/:id_**
+- Supprimer une compétence : **_DELETE /skills/:id_**
+
+**Regions SNCF :**
+
+- Récupérer toutes les régions : **_GET /locations_**
+- Récupérer une région par ID : **_GET /locations/:id_**
+- Créer une région : **_POST /locations_**
+- Mettre à jour une régions : **_PUT /locations/:id_**
+- Supprimer une région : **_DELETE /locations/:id_**
+
+
 **Emplois :**
 
 - Récupérer tous les emplois : **_GET /jobs_**
@@ -58,6 +75,9 @@ Bienvenue dans la documentation de notre API RESTful pour notre base de données
 - Créer un rôle utilisateur : **_POST /user_roles_**
 - Mettre à jour un rôle utilisateur : **_PUT /user_roles_**
 - Supprimer un rôle utilisateur :**_DELETE /user_roles_**
+
+
+
 
 ## Exemple Utilisateurs
 
